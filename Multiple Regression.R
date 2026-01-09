@@ -3,13 +3,11 @@ install.packages("dplyr")
 install.packages("broom")
 install.packages("ggpubr")
 
-#Loading the Packages
 library(ggplot2)
 library(dplyr)
 library(broom)
 library(ggpubr)
 
-#Importing the dataset : You can find the dataset in my github account
 heart.data <- read.csv("D:/R/Datasets/heart.data.csv")
 View(heart.data)
 summary(heart.data)
@@ -100,4 +98,5 @@ heart.plot + annotate(geom = "text", x=30, y=1.75, label=" = 15 + (-0.2*biking) 
 #In my survey of 500 towns, I found significant relationships between the frequency of biking to work and 
 #the frequency of heart disease and the frequency of smoking and frequency of heart disease (p < 0 and p < 0.001, respectively).
 #Specifically I found a 0.2% decrease (± 0.0014) in the frequency of heart disease for every 1% increase in biking, and 
+
 #a 0.178% increase (± 0.0035) in the frequency of heart disease for every 1% increase in smoking.
